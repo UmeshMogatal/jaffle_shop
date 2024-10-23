@@ -1,0 +1,12 @@
+sources:
+  - name: redshift_raw
+    database: dbtworkshop  
+    schema: jaffle_shop
+    tables:
+      - name: orders
+
+  - name: snowflake_raw
+    database: raw
+    schema: jaffle_shop
+    tables:
+      - name: orders
