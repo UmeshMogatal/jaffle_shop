@@ -1,6 +1,6 @@
 sources:
   - name: redshift_raw
-    database: redshift_dev  
+    database: "{{env_var('DBT_DATABASE')}}"  
     schema: jaffle_shop
     tables:
       - name: orders
