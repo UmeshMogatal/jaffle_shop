@@ -1,4 +1,5 @@
 {{ config(materialized='table') }}
+
 select *
 from {{ ref('rs_completed_orders') }}
 
